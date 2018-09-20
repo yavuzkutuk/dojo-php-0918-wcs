@@ -18,7 +18,7 @@ function like(array $users) : String
 }
 
 
-$choucroute = ['Simon','Frederic','Bertrand','Jean'];
+$users = ['Simon','Frederic','Bertrand','Jean'];
 
-echo (like($choucroute));
+echo (like($users));
 echo like(['David', 'Jean-Pierre', 'Alex']);
