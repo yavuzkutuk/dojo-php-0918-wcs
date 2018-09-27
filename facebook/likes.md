@@ -9,6 +9,8 @@
 * *"Simon et Arthur aiment cette publication"*,
 * *"Simon et X autres personnes ont aimé cette publication."*,
 
+> Petit bonus : afficher un prénom aleatoirement parmis ceux du tableau.
+
 ## Concepts
 
 * Tests successifs,
