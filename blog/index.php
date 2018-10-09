@@ -2,7 +2,7 @@
 require 'conf/db.php';
 require 'lib/article.php';
 
-if($_SERVER['REQUEST_METHOD'] === 'POST'){
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     addArticle($_POST, $pdo);
 }
 require '_inc/_head.php';
@@ -21,9 +21,8 @@ require '_inc/_head.php';
             <tbody>
             <?php
                 $articles = showArticles($pdo);
-                foreach($articles as $article)
-                {
-                    ?>
+                foreach ($articles as $article) {
+                ?>
                     <tr>
                         <td><?= $article['id']; ?></td>
                         <td><?= $article['titre']; ?></td>
@@ -33,7 +32,7 @@ require '_inc/_head.php';
                             <a href="details.php?id=<?= $article['id']; ?>">Voir +</a>
                         </td>
                     </tr>
-                    <?php } ?>
+            <?php } ?>
             </tbody>
             </table>
         </div>

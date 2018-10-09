@@ -1,10 +1,10 @@
 <?php
 
-require 'conf/db.php';
-require 'lib/article.php';
-require '_inc/_head.php';
+    require 'conf/db.php';
+    require 'lib/article.php';
+    require '_inc/_head.php';
 
-$article = showArticle($_GET['id'], $pdo);
+    $article = showArticle($_GET['id'], $pdo);
 ?>
 <div class="col-12">
 
