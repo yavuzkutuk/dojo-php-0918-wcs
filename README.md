@@ -6,4 +6,6 @@
 3. BDD Advanced (27 sept. 2018),
 4. Atelier BLOG (02 oct. 2018),
 5. Atelier POO | Héritage (04 oct. 2018),
+6. Atelier POO | Classes abstraites et interface (09 oct. 2018),
+7. Distance de Hamming - RemyLabecot (16 oct. 2018),
 
