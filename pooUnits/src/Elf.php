@@ -3,20 +3,20 @@
  * Created by PhpStorm.
  * User: aurelwcs
  * Date: 04/10/18
- * Time: 11:12
+ * Time: 11:06
  */
 
 namespace Unit;
+require_once 'Unit.php';
 
-require 'Unit.php';
 
 
-class Soldier extends AbstractUnit
+class Elf extends Unit
 {
-    private $speed = 2;
+    protected $speed = 5;
 
     public function attack()
     {
-
+        echo "À l'attaque !";
     }
 }
