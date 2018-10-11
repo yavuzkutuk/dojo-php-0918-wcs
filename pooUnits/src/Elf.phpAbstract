@@ -11,7 +11,7 @@ require 'Unit.php';
 
 
 
-class Elf extends Unit
+class Elf extends AbstractUnit
 {
     protected $speed = 5;
 

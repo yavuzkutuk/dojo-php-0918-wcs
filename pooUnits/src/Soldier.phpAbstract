@@ -11,7 +11,7 @@ namespace Unit;
 require 'Unit.php';
 
 
-class Soldier extends Unit
+class Soldier extends AbstractUnit
 {
     private $speed = 2;
 
