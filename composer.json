@@ -1,0 +1,18 @@
+{
+    "name": "aurelwcs/dojo",
+    "description": "Dojo with Wilders",
+    "require-dev": {
+        "phpunit/phpunit": "^7.4"
+    },
+    "authors": [
+        {
+            "name": "Aurélien WCS",
+            "email": "aurelien@wildcodeschool.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Morse\\": "morse/"
+        }
+    }
+}
