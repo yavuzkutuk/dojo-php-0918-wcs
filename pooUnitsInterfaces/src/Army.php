@@ -17,6 +17,8 @@ class Army
      */
     private $soldiers = [];
 
+    public $name;
+
     /**
      * @return array
      */

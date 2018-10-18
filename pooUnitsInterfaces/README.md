@@ -31,4 +31,4 @@ Les méthodes “work()” et “attack()” affichent respectivement “Je trav
 
 ### Étape 5 (Bonus)
 
-Peut être t’es tu dis que tu pourrais faire la même chose sans interface. Alors voici un exemple intéressant. La classe “Army” contient une méthode “join()”. Tente d’y insérer des “Worker” et des “Soldier”. Que constates tu ?
+Peut être t’es tu dis que t pourrais faire la même chose sans interface. Alors voici un exemple intéressant. La classe “Army” contient une méthode “join()”. Tente d’y insérer des “Worker” et des “Soldier”. Que constates tu ?
