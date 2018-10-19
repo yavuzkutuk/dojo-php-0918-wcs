@@ -1,4 +1,5 @@
 <?php
+
 namespace Animals;
 
 /**
@@ -50,7 +51,7 @@ class Cat
      * @param mixed $image
      * @return Cat
      */
-    public function setImage($image) : Cat
+    public function setImage($image): Cat
     {
         $this->image = $image;
         return $this;
@@ -132,7 +133,7 @@ class Cat
      * Indique si le chat est fatigué
      * @return bool
      */
-    public function isTired() : bool
+    public function isTired(): bool
     {
         $result = false;
         if ($this->fatigue >= self::FATIGUE_MAX) {
@@ -178,9 +179,11 @@ class Cat
      */
     public function __toString()
     {
-        $str = '<img src="'.$this->getImage().'" height="100px" /> : Je suis un "'.get_class($this).'", je m\'appelle <strong>'.$this->getName().'</strong>, suis de couleur '.$this->getColor().' et mon niveau de fatigue est à '.$this->getFatigue();
+        $str = '<img src="' . $this->getImage() . '" height="100px" /> : Je suis un "' . get_class($this) . '", je m\'appelle ';
+        $str .= '<strong>' . $this->getName() . '</strong>';
+        $str .= ', suis de couleur ' . $this->getColor() . ' et mon niveau de fatigue est à ' . $this->getFatigue();
         if ($this->collar !== null) {
-            $str .= '<br />'.$this->collar;
+            $str .= '<br />' . $this->collar;
         } else {
             $str .= '<br />Je n\'ai pas de collier.';
         }

@@ -17,7 +17,6 @@ class Unit
     public function __toString()
     {
         return 'La position actuelle est : ' . $this->position[0] . ', ' . $this->position[1];
-
     }
 
     public function walk(string $direction)
@@ -25,14 +24,11 @@ class Unit
        
         if ($direction == 'right') {
             $this->position[0]+= $this->speed;
-        }
-        else if ($direction == 'top') {
+        } elseif ($direction == 'top') {
             $this->position[1]+= $this->speed;
-        }
-        else if ($direction == 'left') {
+        } elseif ($direction == 'left') {
             $this->position[0]-= $this->speed;
-        }
-        else if ($direction == 'bottom') {
+        } elseif ($direction == 'bottom') {
             $this->position[1]-= $this->speed;
         }
     }
