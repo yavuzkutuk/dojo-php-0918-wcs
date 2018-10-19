@@ -8,7 +8,6 @@
 
 namespace Morse;
 
-
 class Morse
 {
 
@@ -56,25 +55,25 @@ class Morse
         "." => "E",
     ];
 
-    public function convertToLetters(string $morseInput) : string
+    public function convertToLetters(string $morseInputSentence): string
     {
-        //.-- ..   .-.. -..
-        $morseInput = explode(' ',$morseInput);
-        $result = '';
+        $morseInputWord = explode('   ', $morseInputSentence);
+        var_dump($morseInputWord);
+        foreach ($morseInputWord as $word) {
+            $morseInputLetter = explode(' ', $word);
+            for ($i = 0; $i < count($morseInputLetter); $i++) {
 
-        for ($i = 0; $i < count($morseInput); $i++) {
-            if($morseInput[$i] == '') {
-                $i++;
-                $result .= ' ';
-                continue;
+                /**
+                 * foreach (self::MORSE as $morse => $letter) {
+                 *     if ($morseInputLetter[$i] == $morse) {
+                 *         $result .= $letter;
+                 *     }
+                 * }*/
+
+                $result .= self::MORSE[$morseInputLetter[$i]];
             }
-            foreach (self::MORSE as $morse => $letter) {
-                if ($morseInput[$i] == $morse) {
-                    $result .= $letter;
-                }
-            }
+            $result .= ' ';
         }
-        return $result;
+        return trim($result);
     }
-
 }
