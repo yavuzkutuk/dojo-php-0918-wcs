@@ -1,0 +1,85 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: hsl(0, 0%, 15%);
+}
+
+.main {
+    box-sizing: border-box;
+    width: 21rem;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background: hsl(30, 50%, 75%);
+    box-shadow:
+            0px 4px 0px 4px hsl(30, 50%, 60%);
+}
+
+.screen {
+    box-sizing: border-box;
+    height: 8rem;
+    width: 18rem;
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    line-height: 6rem;
+    text-align: right;
+    background: hsl(280, 8%, 55%);
+    color: hsl(280, 8%, 25%);
+    box-shadow:
+            0px -2px 0px 2px hsl(30, 50%, 60%);
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    width: 18rem;
+    margin: 2rem 0 0.5rem 0.5rem;
+}
+
+button {
+    display: block;
+    height: 3rem;
+    width: 3.5rem;
+    margin: 0.5rem;
+    border: 0;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+    outline: none;
+    color: hsl(30, 60%, 35%);
+    background: hsl(30, 60%, 90%);
+    box-shadow:
+            0px 3px 0px 4px hsl(30, 60%, 85%);
+}
+button:hover {
+    color: hsl(358, 45%, 85%);
+    background: hsl(358, 45%, 60%);
+    box-shadow:
+            0px 3px 0px 4px hsl(358, 45%, 55%);
+}
+button:active {
+    color: hsl(210, 45%, 85%);
+    background: hsl(210, 45%, 60%);
+    box-shadow:
+            0px 3px 0px 4px hsl(210, 45%, 55%);
+}
+
+#clear {
+    width: 8rem;
+}
+
+#equals {
+    height: 7rem;
+    margin-top: -3.5rem;
+}
+
+#number-0 {
+    width: 8rem;
+}
