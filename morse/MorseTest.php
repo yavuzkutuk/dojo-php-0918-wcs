@@ -18,6 +18,6 @@ class MorseTest extends TestCase
         $morse = new Morse();
         $this->assertEquals('W', $morse->convertToLetters('.--'));
         $this->assertEquals('WILD', $morse->convertToLetters('.-- .. .-.. -..'));
-        $this->assertEquals('WILD CODE SCHOOL', $morse->convertToLetters('.-- ..   .-.. -..'));
+        $this->assertEquals('WILD CODE SCHOOL', $morse->convertToLetters('.-- .. .-.. -..   -.-. --- -.. .   ... -.-. .... --- --- .-..'));
     }
 }

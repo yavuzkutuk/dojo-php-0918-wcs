@@ -58,7 +58,8 @@ class Morse
     public function convertToLetters(string $morseInputSentence): string
     {
         $morseInputWord = explode('   ', $morseInputSentence);
-        var_dump($morseInputWord);
+        $result = '';
+
         foreach ($morseInputWord as $word) {
             $morseInputLetter = explode(' ', $word);
             for ($i = 0; $i < count($morseInputLetter); $i++) {
