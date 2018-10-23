@@ -55,25 +55,19 @@ class Morse
         "." => "E",
     ];
 
-    public function convertToLetters(string $morseInputSentence): string
+
+    public function convertToLetters(string $str): string
     {
-        $morseInputWord = explode('   ', $morseInputSentence);
         $result = '';
-
-        foreach ($morseInputWord as $word) {
-            $morseInputLetter = explode(' ', $word);
-            for ($i = 0; $i < count($morseInputLetter); $i++) {
-
-                /**
-                 * foreach (self::MORSE as $morse => $letter) {
-                 *     if ($morseInputLetter[$i] == $morse) {
-                 *         $result .= $letter;
-                 *     }
-                 * }*/
-
-                $result .= self::MORSE[$morseInputLetter[$i]];
+        $words = explode('   ', $str);
+        foreach ($words as $word) {
+            $letters = explode(' ', $word);
+            foreach ($letters as $letter) {
+                if (key_exists($letter, self::MORSE)) {
+                    $result .= self::MORSE[$letter];
+                }
             }
-            $result .= ' ';
+           $result .= ' ';
         }
         return trim($result);
     }
