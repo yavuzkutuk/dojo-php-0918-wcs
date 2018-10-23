@@ -8,4 +8,5 @@
 5. Atelier POO | Héritage (04 oct. 2018),
 6. Atelier POO | Classes abstraites et interface (09 oct. 2018),
 7. Distance de Hamming - RemyLabecot (16 oct. 2018),
+7. Morse (18 & 23 oct. 2018),
 

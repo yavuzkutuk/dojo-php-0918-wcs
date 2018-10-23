@@ -21,7 +21,7 @@ require '_inc/_head.php';
             <tbody>
             <?php
                 $articles = showArticles($pdo);
-                foreach ($articles as $article) {
+            foreach ($articles as $article) {
                 ?>
                     <tr>
                         <td><?= $article['id']; ?></td>

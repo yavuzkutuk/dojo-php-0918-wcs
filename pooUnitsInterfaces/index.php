@@ -54,7 +54,7 @@ foreach ($soldiers as $soldier) {
 
 try {
     $army->join($workers[1]);
-}catch(TypeError $e){
+} catch (TypeError $e) {
     echo 'You can\'t join the army, farmer !' . '<br>';
     echo '<em>' . $e->getMessage() . '</em><br>';
 }
