@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="Morse">
+            <directory>./morse</directory>
+        </testsuite>
+        <testsuite name="Worms">
+            <directory>./worms</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
+
