@@ -7,6 +7,9 @@
         <testsuite name="Worms">
             <directory>./worms</directory>
         </testsuite>
+        <testsuite name="Change">
+            <directory>./cashier</directory>
+        </testsuite>
     </testsuites>
 </phpunit>
 

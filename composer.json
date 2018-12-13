@@ -13,7 +13,8 @@
     "autoload": {
         "psr-4": {
             "Morse\\": "morse/",
-            "Worms\\": "worms/"
+            "Worms\\": "worms/",
+            "Cashier\\": "cashier/"
         }
     }
 }
