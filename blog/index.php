@@ -1,11 +1,11 @@
 <?php
-require 'conf/db.php';
-require 'lib/article.php';
+require_once 'conf/db.php';
+require_once 'lib/article.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     addArticle($_POST, $pdo);
 }
-require '_inc/_head.php';
+require_once '_inc/_head.php';
 ?>
         <div class="col-12 col-md-8">
             <table class="table table-striped">
