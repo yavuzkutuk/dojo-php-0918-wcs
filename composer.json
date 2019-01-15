@@ -14,7 +14,8 @@
         "psr-4": {
             "Morse\\": "morse/",
             "Worms\\": "worms/",
-            "Cashier\\": "cashier/"
+            "Cashier\\": "cashier/",
+            "BlackJack\\": "blackjack/"
         }
     }
 }
