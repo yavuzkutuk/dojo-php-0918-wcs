@@ -1,49 +1,40 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aurelwcs
- * Date: 20/11/18
- * Time: 08:51
- */
+
+
 
 namespace Worms;
+require 'Worm.php';
 
 
-/**
- * Class Arena
- * @package Worms
- */
 class Arena
 {
-    /**
-     * @var Worm
-     */
-    private $fighterA;
+    private $worm1;
+    private $worm2;
 
-    /**
-     * @var Worm
-     */
-    private $fighterB;
-
-    public function __construct(Worm $fighterA, Worm $fighterB)
+    public function __construct(Worm $worm1, Worm $worm2)
     {
-        $this->fighterA = $fighterA;
-        $this->fighterB = $fighterB;
+        $this->worm1=$worm1;
+        $this->worm2=$worm2;
     }
 
-    public function fight() : Worm
+    public function fight()
     {
-        $i = 0;
-        while (!$this->fighterA->isDead() && !$this->fighterB->isDead()) {
-            $this->fighterA->attack($this->fighterB);
-            $this->fighterB->attack($this->fighterA);
-            echo 'round ' . ++$i . PHP_EOL;
+        while($this->worm1->isDead() == false && $this->worm2->isDead() == false ){
+            $this->worm1->attack($this->worm2);
+            $this->worm2->attack($this->worm1);
         }
-        if ($this->fighterB->isDead())
-        {
-            return $this->fighterA;
-        } else {
-            return $this->fighterB;
+
+        if($this->worm1->isDead()){
+            return 'Worm2 is the Winner';
+        }else{
+            return 'Worm1 is the Winner';
         }
     }
 }
+
+$xavier = new Worm(10,2);
+$olivier = new Worm (10, 5);
+
+$arena = new Arena($xavier, $olivier);
+echo $arena->fight();
+

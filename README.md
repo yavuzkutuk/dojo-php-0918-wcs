@@ -12,4 +12,5 @@
 8. Worms (20 & 22 nov. 2018),
 10. [Dojo drapeaux CSS](https://github.com/WildCodeSchool/dojo-css-drapeau) (04 & 06 Déc. 2018).
 11. Cashier (11 Déc. 2018),
-12. Black Jack (08 & 16 Janv. 2019).
+12. Black Jack (08 & 16 Janv. 2019)
+13. Shape (13 juin 2019)

@@ -1,69 +1,56 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aurelwcs
- * Date: 20/11/18
- * Time: 08:50
- */
 
 namespace Worms;
 
-
 class Worm
 {
-    /**
-     * @var int
-     */
     private $pv;
-
-    /**
-     * @var int
-     */
     private $pa;
 
-    /**
-     * @return int
-     */
-    public function getPv(): int
+    public function __construct($pv_extern,$pa_extern)
     {
-        return $this->pv;
+        $this->pv = $pv_extern;
+        $this->pa = $pa_extern;
     }
 
-    /**
-     * @param int $pv
-     * @return Worm
-     */
-    public function setPv(int $pv): Worm
+    public function getPv():int
     {
-        $this->pv = $pv;
-        return $this;
+       return $this->pv;
     }
 
-    /**
-     * @return int
-     */
-    public function getPa(): int
+    public function setPv($health)
+    {
+        return $this->pv = $health;
+    }
+
+    public function getPa():int
     {
         return $this->pa;
     }
 
-    /**
-     * @param int $pa
-     * @return Worm
-     */
-    public function setPa(int $pa): Worm
+    public function setPa($attack)
     {
-        $this->pa = $pa;
-        return $this;
+         $this->pa = $attack;
+         return $this;
     }
 
     public function isDead(): bool
     {
-        return ($this->getPv() <= 0);
+        if($this->pv <= 0 ){
+            return true;
+        }
+        return false;
     }
 
-    public function attack(Worm $villain)
+    public function attack(Worm $worm)
     {
-        $villain->setPv($villain->getPv() - $this->getPa());
+        if($this->pa >= 0){
+            $worm->pv = $worm->pv - $this->pa;
+        }
     }
 }
+
+$xavier = new Worm(15,20);
+$olivier = new Worm (20, 15);
+$xavier->attack($olivier);
+$olivier->isDead();
