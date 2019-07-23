@@ -1,11 +1,13 @@
 ## BlackJack Scorer
 
 L'objectif de cet exercice est de comparer 2 collections de cartes. La fonction blackjack prendra en paramètre une collection de collections de cartes.
-La 1 entrée de ce tableau correspond aux cartes du Joueur (J) et la seconde entrée à celle du Croupier (C).
+La 1 entrée de ce tableau correspond aux cartes du Joueur (J) et la seconde entrée à celle du Croupier (C) ou Bank (en anglais).
+
+*Il s'agira uniquement de calculer le score et de déterminer qui du croupier ou du joueur est le vainqueur. (pas de parties automatiques)*
 
 Valeurs des différentes cartes :
 * [1-10] : Valeur de la carte
-* V / D / R : 10
+* J / Q / K : 10 (J=valet, Q=Reine, K=Roi)
 * A : 11 ou 1
 
 Les règles du BlackJack: le joueur gagne si la somme des valeurs de ses cartes est supérieure à celle du croupier mais inférieure ou égale à 21.
