@@ -2,7 +2,7 @@
 
 ## Consignes
 
-À partir d'un tableau `$users` contenant une série de prénoms, afficher selon le nombre de prenoms (0,1,2 ou >2), les phrase type correspondantes : 
+À partir d'un tableau `$users` contenant une série de prénoms, afficher selon le nombre de prenoms (0,1,2 ou >2), les phrases types correspondantes : 
 
 * *"Soyez le premier à aimer cette publication"*,
 * *"Simon aime cette publication"*,
